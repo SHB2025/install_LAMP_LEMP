@@ -1,6 +1,11 @@
 # Minimalni LAMP / LEMP Installer
 Jednostavna Bash skripta za instalaciju LAMP (Apache + MySQL + PHP) ili LEMP (NGINX + MySQL + PHP) stack-a na Linux sistemima. Skripta automatski ažurira pakete, instalira potrebne servise, omogućava PHP testnu stranicu i nudi opciju deinstalacije.
 
+# Šta su LAMP i LEMP?
+
+- LAMP (Linux, Apache, MySQL, PHP) – Tradicionalni stack za web servere koji koristi Apache za posluživanje stranica.
+- LEMP (Linux, NGINX, MySQL, PHP) – Alternativa LAMP-u, koristi NGINX, koji je brži i efikasniji u rukovanju velikim brojem zahtjeva.
+
 # Karakteristike:
 - ✅ Instalacija LAMP ili LEMP stack-a jednim unosom
 - ✅ Automatska konfiguracija Apache/nginx i MySQL
