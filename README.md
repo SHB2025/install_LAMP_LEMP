@@ -1,6 +1,11 @@
 # Minimalni LAMP / LEMP Installer
 Jednostavna Bash skripta za instalaciju LAMP (Apache + MySQL + PHP) ili LEMP (NGINX + MySQL + PHP) stack-a na Linux sistemima. Skripta automatski ažurira pakete, instalira potrebne servise, omogućava PHP testnu stranicu i nudi opciju deinstalacije.
 
+# NAPOMENA: 
+
+Ukoliko koristite Cloudflare Proxy i imate problem sa generisanjem SSL certifikata pripremili smo za vas rješenje: 
+https://github.com/SHB2025/certbot-cloudflare-LAMP
+
 # Šta su LAMP i LEMP?
 
 - LAMP (Linux, Apache, MySQL, PHP) – Tradicionalni stack za web servere koji koristi Apache za posluživanje stranica.
