@@ -76,9 +76,9 @@ EOF
 
 elif [[ "$izbor" == "3" ]]; then
     echo "Deinstalacija..."
+    sudo systemctl stop apache2 nginx mysql
     sudo apt remove --purge -y apache2 nginx mysql-server php libapache2-mod-php php-mysql php-fpm
     sudo rm -rf /var/www/html/info.php
-    sudo systemctl stop apache2 nginx mysql
     echo -e "\n Deinstalacija završena!"
 
 elif [[ "$izbor" == "0" ]]; then
