@@ -18,8 +18,8 @@ Jednostavna Bash skripta za instalaciju LAMP (Apache + MySQL + PHP) ili LEMP (NG
 Pokrenite skriptu sa sudo privilegijama:
 
     wget https://raw.githubusercontent.com/SHB2025/install_LAMP_LEMP/refs/heads/main/install_LAMP_LEMP.sh
-    sudo chmod +x Install_LAMP_LEMP.sh
-    sudo ./Install_LAMP_LEMP.sh
+    sudo chmod +x install_LAMP_LEMP.sh
+    sudo ./install_LAMP_LEMP.sh
 
 # Podržani OS:
 ✅ Debian / Ubuntu
