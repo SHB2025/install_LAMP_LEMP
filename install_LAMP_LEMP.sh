@@ -26,6 +26,7 @@ if [[ "$izbor" == "1" ]]; then
     sudo apt install -y apache2 mysql-server php libapache2-mod-php php-mysql || { echo "Instalacija LAMP-a nije uspjela!"; exit 1; }
     sudo systemctl enable apache2
     sudo systemctl enable mysql
+    sudo apt autoremove -y
     sudo systemctl restart apache2
     echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
 
@@ -69,6 +70,7 @@ server {
 }
 EOF
 
+    sudo apt autoremove -y
     sudo nginx -t && sudo systemctl reload nginx
 
     IP_ADRESA=$(hostname -I | awk '{print $1}')
@@ -78,6 +80,9 @@ elif [[ "$izbor" == "3" ]]; then
     echo "Deinstalacija..."
     sudo systemctl stop apache2 nginx mysql
     sudo apt remove --purge -y apache2 nginx mysql-server php libapache2-mod-php php-mysql php-fpm
+    sudo apt update -y
+    sudo apt upgrade -y
+    sudo apt autoremove -y
     sudo rm -rf /var/www/html/info.php
     echo -e "\n Deinstalacija završena!"
 
