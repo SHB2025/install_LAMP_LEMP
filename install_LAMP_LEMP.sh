@@ -23,7 +23,7 @@ read -rp "Unesi izbor [0-3]: " izbor
 if [[ "$izbor" == "1" ]]; then
     echo "Instalacija LAMP stack-a..."
     sudo apt update && sudo apt upgrade -y
-    sudo apt install -y apache2 mysql-server php libapache2-mod-php php-mysql || { echo "❌ Instalacija LAMP-a nije uspjela!"; exit 1; }
+    sudo apt install -y apache2 mysql-server php libapache2-mod-php php-mysql || { echo "Instalacija LAMP-a nije uspjela!"; exit 1; }
     sudo systemctl enable apache2
     sudo systemctl enable mysql
     sudo systemctl restart apache2
